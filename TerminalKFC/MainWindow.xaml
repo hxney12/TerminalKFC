@@ -1,0 +1,48 @@
+﻿<Window x:Class="TerminalKFC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TerminalKFC"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="750" Width="500" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.Background>
+                <ImageBrush ImageSource="1.jpg"/>
+            </Grid.Background>
+
+            <Image HorizontalAlignment="Left"  VerticalAlignment="Top" Height="120" Source="6.jpg"/>
+        </Grid>
+        
+        <Grid Grid.Row="1">
+            <Grid.Background>
+                <ImageBrush ImageSource="2.jpg"/>
+            </Grid.Background>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="0.4*"/>
+            </Grid.RowDefinitions>
+
+
+            <Border Grid.Row="1" Background="#B2716666">
+                <Button Content="Сделать заказ" Foreground="Yellow" FontSize="30" Background="Transparent" FontStyle="Italic" FontWeight="Bold" Click="Button_Click"/>
+            </Border>
+        </Grid>
+        
+        <Grid Grid.Row="2">
+            <Grid.Background>
+                <ImageBrush ImageSource="3.jpg"/>
+            </Grid.Background>
+            
+        </Grid>
+        
+    </Grid>
+</Window>
